@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветовод</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="img/background.png">
+
+    <div id="task">
+        <pre><h2>Совпадает ли название цвета на левой карточке с цветом текста на правой карточке?</h2></pre>
+        <pre><h2>Если готов, нажми на "Go", и запустится таймер</h2></pre>
+    </div>
+    <div class="game">
+        <div id="word1">Welcome</div>
+        <div id="word2">!</div>
+    </div>
+    <div >
+        <input id="yes", type="button", value="yes", onclick="game.clickyes()">
+        <input id="no", type="button", value="no", onclick="game.clickno()">
+        <input id="clock", type="button", value="Go", onclick="timer.clock()">
+    </div>
+    <p id="corretAnswer"></p>
+    <p id="incorretAnswer"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
